@@ -5,7 +5,7 @@ import getMonthDayAndWeekDayName from "../../utils/getMonthDayAndWeekDayName";
 const createUserCollectionInFirebase = async (db: Firestore, user: User) => {
   const { dateString } = getMonthDayAndWeekDayName(new Date());
   const docRef = doc(db, user.uid, dateString);
-  await setDoc(docRef, { arrayData: "[]" });
+  await setDoc(docRef, {});
 };
 
 export default createUserCollectionInFirebase;
