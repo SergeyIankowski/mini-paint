@@ -24,11 +24,12 @@
   font-size: 18px;
   margin-bottom: 10px;
   border: none;
-  color: white;
-  background-color: black;
+  color: $sign-in-button-text-color;
+  background-color: $sign-in-button-color;
+  cursor: pointer;
 }
 .registerGoogle {
-  background-color: #4285f4;
+  background-color: $sign-in-google-button-color;
 }
 .registerText {
   font: normal normal 10px/120%;

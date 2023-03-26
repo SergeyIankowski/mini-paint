@@ -49,7 +49,7 @@ const Login: FC<LoginProps> = ({ user }) => {
             Login
           </button>
           <button
-            className={classes.loginButton}
+            className={`${classes.loginButton} ${classes.loginGoogle}`}
             type="button"
             onClick={() => {
               signInWithGoogle(notifyMessage);

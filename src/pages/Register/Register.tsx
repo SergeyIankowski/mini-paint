@@ -60,7 +60,7 @@ const Register: FC<RegisterProps> = ({ user }) => {
             Register
           </button>
           <button
-            className={classes.registerButton}
+            className={`${classes.registerButton} ${classes.registerGoogle}`}
             type="button"
             onClick={() => {
               signInWithGoogle(notifyRegistratonFails);
