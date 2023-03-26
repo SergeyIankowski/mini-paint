@@ -1,0 +1,24 @@
+{
+  "name": "mini-paint",
+  "version": "1.0.0",
+  "description": "mini paint task for innowise group trainingship",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyIankowski/mini-paint.git"
+  },
+  "keywords": [
+    "innowise",
+    "mini-paint",
+    "paint"
+  ],
+  "author": "Sergey Iankowski <garret933@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeyIankowski/mini-paint/issues"
+  },
+  "homepage": "https://github.com/SergeyIankowski/mini-paint#readme"
+}
