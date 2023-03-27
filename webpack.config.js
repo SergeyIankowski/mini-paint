@@ -6,7 +6,7 @@ const { NetlifyPlugin } = require("netlify-webpack-plugin");
 
 const isDev = process.env.NODE_ENV == "development";
 
-const stylesHandler = isDev ? 'style-loader' : MiniCssExtractPlugin.loader;
+const stylesHandler = isDev ? "style-loader" : MiniCssExtractPlugin.loader;
 
 const config = {
   devtool: isDev ? "inline-source-map" : "source-map",
