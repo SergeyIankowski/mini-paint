@@ -4,6 +4,7 @@ enum Pages {
   notfound = "/*",
   register = "/register",
   reset = "/reset",
+  paint = "/paint-board",
 }
 
 export default Pages;

@@ -6,6 +6,7 @@ import useFirebaseContext from "./hooks/firebase";
 import Pages from "./models/Pages";
 import Login from "./pages/Login/Login";
 import Page404 from "./pages/Page404/Page404";
+import Paint from "./pages/Paint/Paint";
 import Register from "./pages/Register/Register";
 import ResetPassword from "./pages/ResetPassword/ResetPassword";
 
@@ -24,6 +25,7 @@ const AppRouter = () => {
       <Route path={Pages.login} element={<Login user={user!} />} />
       <Route path={Pages.register} element={<Register user={user!} />} />
       <Route path={Pages.reset} element={<ResetPassword user={user!} />} />
+      <Route path={Pages.paint} element={<Paint user={user!} />} />
     </Routes>
   );
 };
