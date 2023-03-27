@@ -16,7 +16,7 @@ const Login: FC<LoginProps> = ({ user }) => {
 
   useEffect(() => {
     if (user) {
-      navigate(Pages.login);
+      navigate(Pages.paint);
     }
   }, [user]);
 

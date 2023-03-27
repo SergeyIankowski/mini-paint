@@ -27,7 +27,7 @@ const Register: FC<RegisterProps> = ({ user }) => {
 
   useEffect(() => {
     if (user) {
-      navigate(Pages.register);
+      navigate(Pages.paint);
     }
   }, [user]);
   return (

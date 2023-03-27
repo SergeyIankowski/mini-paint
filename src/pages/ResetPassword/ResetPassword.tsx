@@ -18,7 +18,7 @@ const ResetPassword: FC<ResetPasswordProps> = ({ user }) => {
   };
   useEffect(() => {
     if (user) {
-      navigate(Pages.reset);
+      navigate(Pages.paint);
     }
   }, [user]);
   return (
