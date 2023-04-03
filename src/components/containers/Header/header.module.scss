@@ -1,31 +1,26 @@
 @import "../../../scss/abstract/variables";
+@import '../../../scss/mixins/button';
 .header {
   width: 100%;
   height: 5vh;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 10px;
 }
 
 .buttonLogout {
-  padding: 10px;
-  font-size: 18px;
-  border: none;
-  color: $sign-in-button-text-color;
-  background-color: $sign-in-button-color;
-  cursor: pointer;
+  @include button;
 
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.buttonTheme {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
+.logoutIcon {
+  width: 20px;
+  height: 20px;
 }
-
-.themeIcon {
-  color: $theme-icon-color;
+.email {
+  font: normal bold 20px/120% 'Roboto', sans-serif;
 }

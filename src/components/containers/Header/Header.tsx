@@ -1,25 +1,22 @@
-import { SlLogout } from "react-icons/sl";
-import { GiUbisoftSun, GiMoonOrbit } from "react-icons/gi";
-import { useState } from "react";
+import { FC } from "react";
+import { useNavigate } from "react-router-dom";
 import { logOut } from "../../../firebase";
+import LogoutIcon from "../../../assets/img/logout.png";
+import HeaderProps from "./interface";
+import ThemeButton from "../ThemeButton/ThemeButton";
 import classes from "./header.module.scss";
 
-const BUTTON_ICON_SIZE = 20;
-const THEME_ICON_SIZE = 40;
-
-const Header = () => {
-  const [isLight, setIsLight] = useState(true);
+const Header: FC<HeaderProps> = ({ user, pathToPage }) => {
+  const navigate = useNavigate();
   return (
     <header className={classes.header}>
-      <button type="button" className={classes.buttonTheme} onClick={() => setIsLight(!isLight)}>
-        {isLight ? (
-          <GiMoonOrbit className={classes.themeIcon} size={THEME_ICON_SIZE} />
-        ) : (
-          <GiUbisoftSun className={classes.themeIcon} size={THEME_ICON_SIZE} />
-        )}
+      <p className={classes.email}>{user?.email || " "}</p>
+      <ThemeButton />
+      <button type="button" className={classes.buttonLogout} onClick={() => navigate(pathToPage)}>
+        {pathToPage.slice(1).split("-").join(" ")}
       </button>
       <button type="button" className={classes.buttonLogout} onClick={logOut}>
-        <SlLogout size={BUTTON_ICON_SIZE} className={classes.logoutIcon} />
+        <img src={LogoutIcon} className={classes.logoutIcon} alt="" />
         Logout
       </button>
     </header>
