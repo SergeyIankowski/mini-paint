@@ -1,6 +1,6 @@
-@import '../../../scss/abstract/variables';
-@import '../../../scss/mixins/button';
-@import '../../../scss/mixins/font';
+@import "../../../scss/abstract/variables";
+@import "../../../scss/mixins/button";
+@import "../../../scss/mixins/font";
 .container {
   display: flex;
   flex-direction: column;
@@ -12,9 +12,9 @@
   background-color: white;
 }
 .userEmail {
-  @include font(20px)
+  @include font(20px);
 }
 .deleteButton {
   @include button;
-  @include font(20px)
+  @include font(20px);
 }
