@@ -1,0 +1,8 @@
+@mixin button{
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  color: $sign-in-button-text-color;
+  background-color: $sign-in-button-color;
+  cursor: pointer;
+}
