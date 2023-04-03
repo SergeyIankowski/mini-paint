@@ -1,0 +1,13 @@
+@import '../../../scss/abstract/variables';
+
+.buttonTheme {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.themeIcon {
+  color: $theme-icon-color;
+  width: 40px;
+  height: 40px;
+}
