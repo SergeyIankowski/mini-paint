@@ -1,5 +1,6 @@
 import { FC, useContext } from "react";
 import ThemeContext from "../../../context/Theme/ThemeContext";
+import ThemesNames from "../../../models/ThemesNames";
 import WrapperProps from "./interface";
 import classes from "./wrapper.module.scss";
 
@@ -8,11 +9,11 @@ const dark = { backgroundColor: "#808080", color: "white" };
 
 const setTheme = (str: string) => {
   switch (str) {
-    case "light": {
+    case ThemesNames.light: {
       return light;
       break;
     }
-    case "dark": {
+    case ThemesNames.dark: {
       return dark;
       break;
     }

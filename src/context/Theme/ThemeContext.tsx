@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import { createContext, FC, ReactNode, useState } from "react";
 import LocalStorageKeys from "../../models/LocalStorageKeys";
+import ThemesNames from "../../models/ThemesNames";
 import { ThemeContextType, ThemeProviderType } from "./ThemeContext.type";
 
 type ThemeProviderProps = {
@@ -9,7 +11,7 @@ type ThemeProviderProps = {
 const themeKey = LocalStorageKeys.theme;
 
 const defaultTheme: ThemeContextType =
-  (localStorage.getItem(themeKey) as ThemeContextType) || "light";
+  (localStorage.getItem(themeKey) as ThemeContextType) || ThemesNames.light;
 
 const ThemeContext = createContext<ThemeProviderType>({ theme: defaultTheme, saveTheme: () => {} });
 
@@ -21,7 +23,6 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
     localStorage.setItem(themeKey, values);
   };
 
-  // eslint-disable-next-line react/jsx-no-constructed-context-values
   const themeObj = { theme: currentTheme, saveTheme };
 
   return <ThemeContext.Provider value={themeObj}>{children}</ThemeContext.Provider>;
