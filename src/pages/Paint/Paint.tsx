@@ -19,8 +19,8 @@ const Paint: FC<PaintProps> = ({ user }) => {
   return (
     <Wrapper>
       <div className={classes.paint}>
-        <Header />
-        <PaintBoard />
+        <Header user={user} pathToPage={Pages.snapshots} />
+        <PaintBoard user={user} />
       </div>
     </Wrapper>
   );

@@ -22,8 +22,8 @@ const ResetPassword: FC<ResetPasswordProps> = ({ user }) => {
     }
   }, [user]);
   return (
-    <div className={classes.resetPassword}>
-      <Wrapper>
+    <Wrapper>
+      <div className={classes.resetPassword}>
         <ToastContainer />
         <div className={classes.resetPasswordContainer}>
           <input
@@ -40,8 +40,8 @@ const ResetPassword: FC<ResetPasswordProps> = ({ user }) => {
             Back to <Link to={Pages.login}>Login</Link> page
           </div>
         </div>
-      </Wrapper>
-    </div>
+      </div>
+    </Wrapper>
   );
 };
 
