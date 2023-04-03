@@ -11,7 +11,7 @@ const initialState = {
 };
 
 export const toolSlice = createSlice({
-  name: "currentDate",
+  name: "tool",
   initialState,
   reducers: {
     setTool(state, action: PayloadAction<Tool>) {
