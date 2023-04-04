@@ -1,6 +1,6 @@
 # Mini-paint App
 
-Mini-paint app for innowise trainingship
+Mini-paint app
 
 Deploy: [Mini-paint](https://startling-fairy-f0270e.netlify.app)
 
