@@ -1,12 +1,15 @@
-.wrapper {
+.outerWrapper {
+  width: 100%;
+}
+.innerWrapper {
   width: 1080px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding-top: 1vh;
+  padding: 1vh 10px 0;
 }
 
 @media (max-width: 1079px) {
   .wrapper {
     width: 100%;
-    padding: 1vh 10px 0;
   }
 }

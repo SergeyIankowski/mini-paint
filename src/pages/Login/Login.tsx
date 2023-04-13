@@ -21,10 +21,10 @@ const Login: FC<LoginProps> = ({ user }) => {
   }, [user]);
 
   return (
-    <div className={classes.login}>
-      <Wrapper>
+    <Wrapper>
+      <div className={classes.login}>
         <ToastContainer />
-        <div className={classes.loginContainer}>
+        <form className={classes.loginContainer}>
           <input
             type="text"
             className={classes.loginTextBox}
@@ -63,9 +63,9 @@ const Login: FC<LoginProps> = ({ user }) => {
           <div className={classes.loginText}>
             If you've forgotten your password? <Link to={Pages.reset}>Reset</Link> it.
           </div>
-        </div>
-      </Wrapper>
-    </div>
+        </form>
+      </div>
+    </Wrapper>
   );
 };
 

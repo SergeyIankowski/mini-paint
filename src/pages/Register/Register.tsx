@@ -31,10 +31,10 @@ const Register: FC<RegisterProps> = ({ user }) => {
     }
   }, [user]);
   return (
-    <div className={classes.register}>
-      <Wrapper>
+    <Wrapper>
+      <div className={classes.register}>
         <ToastContainer />
-        <div className={classes.registerContainer}>
+        <form className={classes.registerContainer}>
           <input
             type="text"
             className={classes.registerTextBox}
@@ -71,9 +71,9 @@ const Register: FC<RegisterProps> = ({ user }) => {
           <div className={classes.registerText}>
             Have you already account? Go To <Link to={Pages.login}>LogIn</Link> page
           </div>
-        </div>
-      </Wrapper>
-    </div>
+        </form>
+      </div>
+    </Wrapper>
   );
 };
 

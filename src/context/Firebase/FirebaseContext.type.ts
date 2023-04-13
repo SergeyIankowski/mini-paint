@@ -1,4 +1,4 @@
-import { auth, db } from "../firebase";
+import { auth, db } from "../../firebase";
 
 type FirebaseContextType = {
   db: typeof db;
