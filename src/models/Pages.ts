@@ -5,6 +5,7 @@ enum Pages {
   register = "/register",
   reset = "/reset",
   paint = "/paint-board",
+  snapshots = "/snapshots",
 }
 
 export default Pages;

@@ -1,0 +1,6 @@
+@import "../../../scss/mixins/font";
+
+.dropDownInput {
+  @include font(20px);
+  border-radius: 2px;
+}

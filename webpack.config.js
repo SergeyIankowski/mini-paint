@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV == "development";
 const stylesHandler = isDev ? "style-loader" : MiniCssExtractPlugin.loader;
 
 const config = {
-  devtool: isDev ? "inline-source-map" : "source-map",
+  devtool: isDev ? "eval-source-map" : "source-map",
   entry: "./src/index.tsx",
   output: {
     filename: "[name].[contenthash].js",

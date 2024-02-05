@@ -1,7 +1,7 @@
 import { FC, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/containers/Header/Header";
-import PaintBoard from "../../components/containers/PaintBoard/PaintBoard";
+import PaintBoard from "../../components/view/PaintBoard/PaintBoard";
 import Wrapper from "../../components/view/Wrapper/Wrapper";
 import Pages from "../../models/Pages";
 import PaintProps from "./interface";
@@ -19,8 +19,8 @@ const Paint: FC<PaintProps> = ({ user }) => {
   return (
     <Wrapper>
       <div className={classes.paint}>
-        <Header />
-        <PaintBoard />
+        <Header user={user} pathToPage={Pages.snapshots} />
+        <PaintBoard user={user} />
       </div>
     </Wrapper>
   );
