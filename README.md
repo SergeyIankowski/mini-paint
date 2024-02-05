@@ -1,15 +1,6 @@
-# 🚀 Welcome to your new awesome project!
+## Mini Paint
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
+Run `npm run build` for making local deploy
 ```
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
+Deploy: [mini paint](https://startling-fairy-f0270e.netlify.app/paint-board)
